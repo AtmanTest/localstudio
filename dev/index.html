@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Cours ISTQB Foundation v4.0 — Branche Dev</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { color: #2c3e50; border-bottom: 2px solid #2c3e50; }
+    .section { margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; }
+    table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+    th, td { padding: 8px; border: 1px solid #ddd; }
+    th { background: #e9ecef; font-weight: bold; }
+    .note { color: #2c3e50; font-size: 0.9em; margin-top: 10px; }
+  </style>
+</head>
+<body>
+<h1>📚 Cours ISTQB Foundation v4.0 — Niveau Débutant</h1>
+
+<div class="section">
+  <h2>1. Introduction à la Qualité des Logiciels</h2>
+  <p><strong>Objectif :</strong> Comprendre ce qu'est la qualité, pourquoi elle est importante et comment l'évaluer.</p>
+  
+  <table>
+    <tr><th>Concept</th><th>Description</th></tr>
+    <tr><td><strong>Qualité</strong></td><td>Degré dans lequel un produit satisfait des besoins exprimisés ou implicites.</td></tr>
+    <tr><td><strong>Requêtes de qualité</strong></td><td>Attentes, besoins et contraintes imposés par le client.</td></tr>
+    <tr><td><strong>Attributs de qualité</strong></td><td>Faisabilité, efficience, sécurité, fiabilité, etc.</td></tr>
+  </table>
+
+  <p class="note">💡 Méthode ISTQB : Qualité = Conformance + Compliance</p>
+</div>
+
+<div class="section">
+  <h2>2. Processus de Test (Test Process)</h2>
+  <p><strong>Objectif :</strong> Comprendre le cycle de vie d'un test.</p>
+  
+  <table>
+    <tr><th>Étape</th><th>Description</th></tr>
+    <tr><td><strong>Planification</strong></td><td>Définir les objectifs, scope et stratégie de test.</td></tr>
+    <tr><td><strong>Analyse</strong></td><td>Comprendre le système à tester (requirements, architecture).</td></tr>
+    <tr><td><strong>Design</strong></td><td>Créer les tests (cases, techniques de design).</td></tr>
+    <tr><td><strong>Exécution</strong></td><td>Lancer les tests et collecter les résultats.</td></tr>
+    <tr><td><strong>Analyse</strong></td><td>Interpréter les résultats, identifier les défauts.</td></tr>
+  </table>
+
+  <p class="note">💡 Méthode ISTQB : "You can't manage what you don't measure"</p>
+</div>
+
+<div class="section">
+  <h2>3. Types de Tests (Test Levels)</h2>
+  <p><strong>Objectif :</strong> Comprendre les différents niveaux de test.</p>
+  
+  <table>
+    <tr><th>Niveau</th><th>Cible</th><th>Exemples</th></tr>
+    <tr><td><strong>M1 (Unit)</strong></td><td>Composant interne</td><td>Unit tests, code coverage</td></tr>
+    <tr><td><strong>M2 (Integration)</strong></td><td>Interface entre composants</td><td>API tests, module tests</td></tr>
+    <tr><td><strong>M3 (System)</strong></td><td>Système complet</td><td>End-to-end tests, UI tests</td></tr>
+  </table>
+
+  <p class="note">💡 Méthode ISTQB : Pyramid Testing — plus de M1 que M2/M3</p>
+</div>
+
+<div class="section">
+  <h2>4. Techniques de Design de Tests</h2>
+  <p><strong>Objectif :</strong> Savoir créer des tests pertinents.</p>
+  
+  <table>
+    <tr><th>Technique</th><th>Description</th></tr>
+    <tr><td><strong>Equivalence Partitioning</strong></td><td>Diviser les entrées en classes équivalentes.</td></tr>
+    <tr><td><strong>Boundary Value Analysis</strong></td><td>Tester aux limites des classes (min, max).</td></tr>
+    <tr><td><strong>Error Guessing</strong></td><td>Anticiper les erreurs courantes.</td></tr>
+  </table>
+
+  <p class="note">💡 Méthode ISTQB : "The more you know about the system, the better your tests."</p>
+</div>
+
+<div class="section">
+  <h2>5. Cycle de Vie du Défaut (Defect Lifecycle)</h2>
+  <table>
+    <tr><th>État</th><th>Description</th></tr>
+    <tr><td><strong>New</strong></td><td>Détection lors d'un test.</td></tr>
+    <tr><td><strong>Open</strong></td><td>Affecté à un développeur.</td></tr>
+    <tr><td><strong>Fix Pending</strong></td><td>Correction en cours.</td></tr>
+    <tr><td><strong>Verified</strong></td><td>Fixé et validé.</td></tr>
+  </table>
+
+  <p class="note">💡 Méthode ISTQB : MTTR = Mean Time To Resolution</p>
+</div>
+
+<div class="section">
+  <h2>6. Métriques de Test (Test Metrics)</h2>
+  
+  <table>
+    <tr><th>Métrique</th><th>Formule</th><th>Utilité</th></tr>
+    <tr><td><strong>Density</strong></td><td>Defects / Lines of Code</td><td>Qualité du code</td></tr>
+    <tr><td><strong>Coverage</strong></td><td>LOC Covered / Total LOC</td><td>Complétude des tests</td></tr>
+    <tr><td><strong>DFF</strong></td><td>(D + F) / (D + F)</td><td>Risque de défaut</td></tr>
+  </table>
+
+  <p class="note">💡 Méthode ISTQB : "Measure what you manage"</p>
+</div>
+
+<div class="section">
+  <h2>7. Gestion des Risques</h2>
+  
+  <table>
+    <tr><th>Risque</th><th>Probabilité</th><th>Impact</th></tr>
+    <tr><td><strong>Bas</strong></td><td>Faible</td><td>Faible</td></tr>
+    <tr><td><strong>Moyen</strong></td><td>Moyenne</td><td>Moyenne</td></tr>
+    <tr><td><strong>Haut</strong></td><td>Haute</td><td>Haute</td></tr>
+  </table>
+
+  <p class="note">💡 Méthode ISTQB : Risk = Probability × Impact</p>
+</div>
+
+<div class="section">
+  <h2>8. Configuration Management</h2>
+  
+  <table>
+    <tr><th>Élément</th><th>Description</th></tr>
+    <tr><td><strong>Test Plan</strong></td><td>Document principal de test.</td></tr>
+    <tr><td><strong>Test Cases</strong></td><td>Détail des tests à exécuter.</td></tr>
+    <tr><td><strong>Defect Log</strong></td><td>Enregistrement des défauts.</td></tr>
+  </table>
+
+  <p class="note">💡 Méthode ISTQB : "Configuration Management = Version Control"</p>
+</div>
+
+<div class="section">
+  <h2>9. Conclusion & Pratique</h2>
+  
+  <p><strong>Exercice :</strong></p>
+  <ol>
+    <li>Créer un test case pour une fonction simple (ex: calcul de moyenne)</li>
+    <li>Identifier les équivalences et limites</li>
+    <li>Estimer la couverture de code</li>
+  </ol>
+
+  <p class="note">💡 Méthode ISTQB : "Practice what you learn"</p>
+</div>
+
+<p style="margin-top: 30px; color: #2c3e50;">📌 Document généré pour la branche <strong>dev</strong> du dépôt localstudio.</p>
+</body>
+</html>
