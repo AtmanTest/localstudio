@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Cours Git — Comprendre les Branches</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { color: #2c3e50; border-bottom: 2px solid #2c3e50; }
+    .section { margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; }
+    table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+    th, td { padding: 8px; border: 1px solid #ddd; }
+    th { background: #e9ecef; font-weight: bold; }
+    .note { color: #2c3e50; font-size: 0.9em; margin-top: 10px; }
+  </style>
+</head>
+<body>
+<h1>📚 Cours Git — Comprendre les Branches (Niveau Débutant)</h1>
+
+<div class="section">
+  <h2>1. Qu'est-ce qu'une branche ?</h2>
+  <p><strong>Objectif :</strong> Visualiser une branche comme un chemin dans le temps.</p>
+  
+  <table>
+    <tr><th>Concept</th><th>Description</th></tr>
+    <tr><td><strong>Branche (Branch)</strong></td><td>Une ligne de développement parallèle. Chaque branche est un historique complet de commits.</td></tr>
+    <tr><td><strong>Main/HEAD</strong></td><td>La "réalité" du projet — ce que les utilisateurs voient.</td></tr>
+    <tr><td><strong>Fork</strong></td><td>Votre copie personnelle d'un repo (pour expérimenter sans risque).</td></tr>
+  </table>
+
+  <p class="note">💡 Analogie : Une branche = une route de construction. Main = la route principale.</p>
+</div>
+
+<div class="section">
+  <h2>2. Pourquoi utiliser des branches ?</h2>
+  
+  <table>
+    <tr><th>Usage</th><th>Description</th></tr>
+    <tr><td><strong>Dev en parallèle</strong></td><td>Travailler sur plusieurs features sans bloquer main.</td></tr>
+    <tr><td><strong>Revisions</strong></td><td>Garantir que des versions stables existent toujours.</td></tr>
+    <tr><td><strong>Isolation</strong></td><td>Tester une feature risquée sans toucher à main.</td></tr>
+  </table>
+
+  <p class="note">💡 Règle d'or : "Never touch main directly"</p>
+</div>
+
+<div class="section">
+  <h2>3. Cycle de vie typique (Workflow)</h2>
+  
+  <table>
+    <tr><th>Étape</th><th>Action Git</th><th>Résultat</th></tr>
+    <tr><td><strong>Créer</strong></td><td>git branch dev</td><td>Nouvelle branche vide.</td></tr>
+    <tr><td><strong>Travailler</strong></td><td>git commit -m "feat"</td><td>Commits dans dev.</td></tr>
+    <tr><td><strong>Pusher</strong></td><td>git push origin dev</td><td>Dev sur GitHub.</td></tr>
+    <tr><td><strong>Pull Request</strong></td><td>GitHub UI ou CLI</td><td>Merge vers main.</td></tr>
+  </table>
+
+  <p class="note">💡 Workflow moderne : Feature branches + Pull Requests</p>
+</div>
+
+<div class="section">
+  <h2>4. Commandes Git essentielles</h2>
+  
+  <table>
+    <tr><th>Commande</th><th>Description</th></tr>
+    <tr><td><strong>git branch -a</strong></td><td>Lister toutes les branches (local + remote).</td></tr>
+    <tr><td><strong>git push origin &lt;branch&gt;</strong></td><td>Pusher une branche sur GitHub.</td></tr>
+    <tr><td><strong>git pull request</strong></td><td>Ouvrir un PR vers main (GitHub CLI).</td></tr>
+  </table>
+
+  <p class="note">💡 Méthode ISTQB : "You can't manage what you don't measure"</p>
+</div>
+
+<div class="section">
+  <h2>5. Bonnes pratiques</h2>
+  
+  <table>
+    <tr><th>Règle</th><th>Description</th></tr>
+    <tr><td><strong>Naming</strong></td><td>Clair et descriptif : feature-login, bugfix-42.</td></tr>
+    <tr><td><strong>Small commits</strong></td><td>Un commit = une idée. Facilité de merge.</td></tr>
+    <tr><td><strong>PR Review</strong></td><td>N'importe jamais pusher directement sur main.</td></tr>
+  </table>
+
+  <p class="note">💡 Méthode ISTQB : "Configuration Management = Version Control"</p>
+</div>
+
+<div class="section">
+  <h2>6. Exercice pratique</h2>
+  
+  <ol>
+    <li>Créer une branche <code>dev</code></li>
+    <li>Faire un commit dans cette branche</li>
+    <li>Pusher sur GitHub</li>
+    <li>Ouvrir un PR vers main</li>
+  </ol>
+
+  <p class="note">💡 Méthode ISTQB : "Practice what you learn"</p>
+</div>
+
+<p style="margin-top: 30px; color: #2c3e50;">📌 Document généré pour la branche <strong>dev</strong> du dépôt localstudio.</p>
+</body>
+</html>
